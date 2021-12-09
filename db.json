@@ -1,0 +1,29 @@
+{
+  "post": [
+    {
+      "id": "1",
+      "title": "Post One",
+      "body": "This is the body",
+      "publishedAt": "09-12-2021"
+    },
+    {
+      "id": "1",
+      "title": "Post Two",
+      "body": "This is the body",
+      "publishedAt": "09-12-2021"
+    },
+    {
+      "id": "1",
+      "title": "Post Three",
+      "body": "This is the body",
+      "publishedAt": "09-12-2021"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Mad max",
+      "email": "madmax@example.com"
+    }
+  ]
+}
