@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": "1",
-      "title": "Post One",
+      "title": "Post Ones",
       "body": "This is the body",
       "publishedAt": "09-12-2021"
     },
@@ -17,19 +17,18 @@
       "title": "Post Three",
       "body": "This is the body",
       "publishedAt": "09-12-2021"
-    },
-    {
-      "title": "Post Four",
-      "body": "This is a new post",
-      "publishedAt": "2021-12-09",
-      "id": "uyLvRd-"
     }
   ],
   "users": [
     {
       "id": "1",
-      "name": "Mad max",
+      "name": "Mad Max",
       "email": "madmax@example.com"
+    },
+    {
+      "name": "gektor",
+      "email": "bgejko@gmail.com",
+      "id": "covayeJ"
     }
   ]
 }
