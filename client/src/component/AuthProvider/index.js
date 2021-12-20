@@ -1,8 +1,14 @@
 
 
 export default {
-  login: ({ username }) => {
-    localStorage.setItem('username', username);
+  login: ({login, password}) => {
+    // localStorage.setItem('username', username);
+    fetch('http://localhost:5000/auth', {
+      method: "POST",
+      body: JSON.stringify({
+        login, password
+      })
+    })
     // accept all username/password combinations
     return Promise.resolve();
   },
@@ -27,3 +33,4 @@ export default {
 
   getPermissions: () => Promise.resolve(),
 }
+
