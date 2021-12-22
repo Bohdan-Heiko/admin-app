@@ -50,30 +50,5 @@
       "id": "covayeJ"
     }
   ],
-  "auth": [
-<<<<<<< HEAD
-   
-=======
-    {
-      "login": "qwerty",
-      "password": "12345656",
-      "id": 1
-    },
-    {
-      "login": "www",
-      "password": "222",
-      "id": 2
-    },
-    {
-      "login": "qwerty",
-      "password": "123456",
-      "id": 3
-    },
-    {
-      "login": "12345",
-      "password": "asdfg",
-      "id": 4
-    }
->>>>>>> 9f95c7dd28a4fbf326586e692dbb31ff1a92f841
-  ]
+  "auth": []
 }
