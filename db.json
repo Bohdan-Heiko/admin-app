@@ -19,10 +19,23 @@
       "id": 3
     },
     {
-      "productname": "vbvcb",
-      "description": "cvxcvxc",
-      "publishedAt": "2021-12-20",
+      "nfc": "No",
+      "productname": "dsadsdaaaa",
+      "model": "asdasdas",
+      "description": "asdasda",
+      "price": 1234,
+      "diagonal": "6.6",
+      "publishedAt": "2021-12-21",
       "id": 4
+    },
+    {
+      "nfc": "No",
+      "productname": "xiaomi iiiii",
+      "model": "zxczxc",
+      "description": "czxczx",
+      "diagonal": "zxc",
+      "publishedAt": "2021-12-22",
+      "id": 6
     }
   ],
   "users": [
@@ -39,10 +52,24 @@
   ],
   "auth": [
     {
+      "login": "qwerty",
+      "password": "12345656",
       "id": 1
     },
     {
+      "login": "www",
+      "password": "222",
       "id": 2
+    },
+    {
+      "login": "qwerty",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "login": "12345",
+      "password": "asdfg",
+      "id": 4
     }
   ]
 }

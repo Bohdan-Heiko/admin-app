@@ -1,16 +1,19 @@
 
 
 export default {
-  login: ({login, password}) => {
-    // localStorage.setItem('username', username);
+  login: ({username, password}) => {
+    localStorage.setItem('username', username);
+    
     fetch('http://localhost:5000/auth', {
       method: "POST",
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        login, password
+        login: username, password: password 
+        
       })
     })
     // accept all username/password combinations
-    return Promise.resolve();
+    return Promise.reject();
   },
 
   logout: () => {
@@ -26,11 +29,42 @@ export default {
     return Promise.resolve()
   },
 
-  checkAuth: () => {
-    return localStorage.getItem('username')
-      ? Promise.resolve() : Promise.reject();
+  checkAuth: async () => {
+    // const url = 'http://localhost:5000/auth'
+    // const res = await fetch(url)
+    // const data = await res.json()
+
+    
+    return Promise.resolve()
+    // return localStorage.getItem('username')
+    //   ? Promise.resolve() : Promise.reject();
   },
 
-  getPermissions: () => Promise.resolve(),
+  getPermissions: () => Promise.reject(),
 }
 
+// const authProvider = {
+//   // authentication
+//    login: ({username, password}) => {
+//     localStorage.setItem('username', username, 'password', password);
+    
+//     fetch('http://localhost:5000/auth', {
+//       method: "POST",
+//       headers: { 'Content-Type': 'application/json' },
+//       body: JSON.stringify({
+//         login: username, password: password 
+        
+//       })
+//     })
+//     // accept all username/password combinations
+//     return Promise.reject();
+//   },
+//   checkError: error => Promise.resolve(),
+//   checkAuth: params => Promise.resolve(),
+//   logout: () => Promise.resolve(),
+//   getIdentity: () => Promise.resolve(),
+//   // authorization
+//   getPermissions: params => Promise.resolve(),
+// };
+
+// export default authProvider;
