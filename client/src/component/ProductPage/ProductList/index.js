@@ -1,6 +1,5 @@
 import React from 'react';
 import { List, Datagrid, TextField, DateField, EditButton, DeleteButton } from 'react-admin'
-import ProductCharacters from '../../ProductCharacters';
 
 import { TestButton } from './Button';
 
@@ -16,7 +15,7 @@ const ProductList = (props) => {
         <TextField source='productname' />
         <TextField source='description' />
         <DateField source='publishedAt' />
-        <TestButton label='Characters' />
+        <TestButton title='Product characters' />
         <EditButton basePath='/products' />
         <DeleteButton basePath='/products' />
         
