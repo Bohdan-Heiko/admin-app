@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from "react";
 import Card from '@material-ui/core/Card';
-import { Title, TextField, Datagrid, List, FunctionField } from 'react-admin';
+import { Title } from 'react-admin';
 import { useParams } from "react-router-dom";
-import ProductList from "../ProductPage/ProductList";
+import LoaderExampleIndeterminate from "./animation";
 
+import s from './style.module.css'
 
 const ProductCharacters = (props) => {
   const {id} = useParams()
@@ -19,9 +20,34 @@ const ProductCharacters = (props) => {
   return (
     <Card>
       <Title title="Product characters" />
-      {
-        product && product.id
-      }
+      <table className={s.tableBrokers} cellSpacing="0">
+        <thead>
+          <tr>
+            <td width="4%">id</td>
+            <td width="16%">Product name</td>
+            <td width="16%">Model</td>
+            <td width="16%">Price</td>
+            <td width="16%">Diagonal</td>
+            <td width="16%">NFC</td>
+            <td width="16%">Date creation</td>
+          </tr>
+        </thead>
+        {
+          product ? 
+          <tbody>
+            <tr>
+                <td>{product.id}</td>
+                <td>{product.productname}</td>
+                <td>{product.model}</td>
+                <td>{product.price}</td>
+                <td>{product.diagonal}</td>
+                <td>{product.nfc ? "Yes" : "No"}</td>
+                <td>{product.publishedAt}</td>
+            </tr>
+            </tbody> : <LoaderExampleIndeterminate /> 
+        }
+      </table>
+    
     </Card>
       
   )

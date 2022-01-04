@@ -1,0 +1,37 @@
+/* brokers */
+.tableBrokers {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+.tableBrokers thead td {
+    padding: 15px 8px;
+    background: #fffdfd;
+    color: #998888;
+    border-bottom: 1px solid #5a5555;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tableBrokers thead td:first-child {
+    border-radius: 20px 0 0 0;
+}
+.tableBrokers thead td:last-child {
+    border-radius: 0 20px 0 0;
+}
+
+.tableBrokers tbody td {
+    color: #111111;
+    font-weight: 400;
+    padding: 15px 8px;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+}
+
